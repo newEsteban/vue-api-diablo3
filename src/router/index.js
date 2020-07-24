@@ -15,7 +15,7 @@ const routes = routerOptions.map(r => {
   return {
     ...r,
     // Lazy load
-    component: () => import(`@/views/${r.name}/Index.vue`)
+    component: () => import(/* webpackChunkName: "[request]" */`@/views/${r.name}/Index.vue`)
   }
 })
 
