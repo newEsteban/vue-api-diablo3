@@ -6,6 +6,8 @@ import store from './store'
 import './plugins/bootstrapVue'
 // Vue Font-Awesome
 import './plugins/fontAwesome'
+// Custom directives
+import './directives'
 // CSS global
 import './assets/css/main.styl'
 Vue.config.productionTip = false
