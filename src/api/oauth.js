@@ -3,10 +3,11 @@
 // Traemos el método post de 'axios'
 import { post } from 'axios'
 
-// Cogemos los datos de nuestra cuenta de Blizzard
+// Cogemos los datos de nuestra cuenta de Blizzard desde las variables de entorno
 // 🔥 Recuerda que debes usar tus datos a la hora de hacer las llamadas a las APIs
 // 🔥 Como dice la documentación, tienes un máximo de llamadas por segundo y por hora a la API.
-// 🔥 Estos datos deberían ser privados
+// 🔥 Estos datos deberían ser privados - configúralos en el archivo .env
+// Para obtener credenciales: https://develop.battle.net/
 const clientId = process.env.VUE_APP_CLIENT_ID
 const clientSecret = process.env.VUE_APP_CLIENT_SECRET
 

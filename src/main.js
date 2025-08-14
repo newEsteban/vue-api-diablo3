@@ -16,8 +16,10 @@ new Vue({
   router,
   store,
   methods: {
-    // Nuestra función
+    // Función de inicialización que obtiene el token OAuth automáticamente
     init () {
+      // Disparar la acción para obtener token de Blizzard Battle.net
+      // Ver documentación completa en AUTENTICACION.md
       store.dispatch('oauth/getToken')
     }
   },
